@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resume Builder</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="resume">
+        <header>
+            <h1 contenteditable="true" id="name">Your Name</h1>
+            <div class="contact">
+                <p>Phone: <span contenteditable="true" id="phone">(123) 456-7890</span></p>
+                <p>Email: <span contenteditable="true" id="email">your.email@example.com</span></p>
+                <p>LinkedIn: <a href="#" contenteditable="true" id="linkedin-link">linkedin.com/in/yourprofile</a></p>
+                <p>GitHub: <a href="#" contenteditable="true" id="github-link">github.com/yourusername</a></p>
+            </div>
+        </header>
+
+        <section id="profile">
+            <h2>Profile</h2>
+            <p contenteditable="true" id="profile-text">A brief summary about yourself, your career goals, and key strengths.</p>
+        </section>
+
+        <section id="education">
+            <h2>Education</h2>
+            <div id="education-list">
+                <div class="education-item">
+                    <h3 contenteditable="true">Degree Name</h3>
+                    <p contenteditable="true">University Name, Year</p>
+                    <p contenteditable="true">GPA: X.X</p>
+                </div>
+                <!-- Add more education items as needed -->
+            </div>
+            <button onclick="addEducation()">Add Education</button>
+        </section>
+
+        <section id="projects">
+            <h2>Projects</h2>
+            <div id="projects-list">
+                <div class="project-item">
+                    <h3 contenteditable="true">Project Title</h3>
+                    <p contenteditable="true">Description of the project, technologies used, and your role.</p>
+                    <p>Link: <a href="#" contenteditable="true">Project Link</a></p>
+                </div>
+                <!-- Add more project items as needed -->
+            </div>
+            <button onclick="addProject()">Add Project</button>
+        </section>
+
+        <section id="volunteering">
+            <h2>Volunteering and Responsibilities</h2>
+            <div id="volunteering-list">
+                <div class="volunteering-item">
+                    <h3 contenteditable="true">Organization Name</h3>
+                    <p contenteditable="true">Role/Position</p>
+                    <p contenteditable="true">Description of responsibilities and achievements.</p>
+                    <p contenteditable="true">Duration: Month Year - Month Year</p>
+                </div>
+                <!-- Add more volunteering items as needed -->
+            </div>
+            <button onclick="addVolunteering()">Add Volunteering</button>
+        </section>
+
+        <section id="skills">
+            <h2>Technical Skills and Interests</h2>
+            <div class="skills-subsection">
+                <h3>Languages</h3>
+                <ul id="languages-list" contenteditable="true">
+                    <li>Language 1</li>
+                    <li>Language 2</li>
+                </ul>
+            </div>
+            <div class="skills-subsection">
+                <h3>Tools</h3>
+                <ul id="tools-list" contenteditable="true">
+                    <li>Tool 1</li>
+                    <li>Tool 2</li>
+                </ul>
+            </div>
+            <div class="skills-subsection">
+                <h3>Coursework</h3>
+                <ul id="coursework-list" contenteditable="true">
+                    <li>Course 1</li>
+                    <li>Course 2</li>
+                </ul>
+            </div>
+            <div class="skills-subsection">
+                <h3>Soft Skills</h3>
+                <ul id="softskills-list" contenteditable="true">
+                    <li>Soft Skill 1</li>
+                    <li>Soft Skill 2</li>
+                </ul>
+            </div>
+        </section>
+
+        <section id="certificates">
+            <h2>Certificates</h2>
+            <div id="certificates-list">
+                <div class="certificate-item">
+                    <h3 contenteditable="true">Certificate Name</h3>
+                    <p contenteditable="true">Issuing Organization, Year</p>
+                    <p contenteditable="true">Description or credential ID.</p>
+                </div>
+                <!-- Add more certificate items as needed -->
+            </div>
+            <button onclick="addCertificate()">Add Certificate</button>
+        </section>
+
+        <div class="controls">
+            <button onclick="downloadResume()">Download Resume as PDF</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

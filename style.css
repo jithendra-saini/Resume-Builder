@@ -1,0 +1,99 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 20px;
+    background-color: #f4f4f4;
+}
+
+.resume {
+    max-width: 800px;
+    margin: 0 auto;
+    background-color: white;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+header {
+    text-align: center;
+    border-bottom: 2px solid #333;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2em;
+}
+
+.contact {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.contact p {
+    margin: 5px 0;
+}
+
+section {
+    margin-bottom: 20px;
+}
+
+section h2 {
+    border-bottom: 1px solid #ccc;
+    padding-bottom: 5px;
+    color: #333;
+}
+
+.education-item, .project-item, .volunteering-item, .certificate-item {
+    margin-bottom: 15px;
+}
+
+.education-item h3, .project-item h3, .volunteering-item h3, .certificate-item h3 {
+    margin: 0;
+    font-size: 1.2em;
+}
+
+.skills-subsection {
+    margin-bottom: 15px;
+}
+
+.skills-subsection h3 {
+    margin-bottom: 5px;
+    font-size: 1.1em;
+}
+
+ul {
+    list-style-type: disc;
+    margin-left: 20px;
+}
+
+.controls {
+    text-align: center;
+    margin-top: 20px;
+}
+
+button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    margin: 5px;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+@media print {
+    .controls {
+        display: none !important;
+    }
+    button {
+        display: none !important;
+    }
+}

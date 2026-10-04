@@ -1,5 +1,6 @@
 Resume Builder
 > HTML • CSS • JavaScript
+
 A web-based application that helps users create and customize professional resumes easily.
 - Creating and formatting a professional resume manually can be time-consuming.
 - Develop a simple web application to make resume creation easier.
